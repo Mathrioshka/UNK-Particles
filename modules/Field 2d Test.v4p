@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
-   <PATCH nodename="E:\Dropbox\Mathrioshka Project\UNKproject\VVVV APP\Eduard Version\modules\Field 2d Test.v4p" systemname="callmenames" filename="C:\Users\Vadim\Documents\GitRepos\ParticlesGPU-Modular\callmenames.v4p" locked="0">
-   <BOUNDS type="Window" left="15600" top="6660" width="12990" height="10890">
+   <PATCH nodename="C:\Users\Vadim\Documents\GitRepos\UNK-Particles\modules\Field 2d Test.v4p" systemname="callmenames" filename="C:\Users\Vadim\Documents\GitRepos\ParticlesGPU-Modular\callmenames.v4p" locked="0">
+   <BOUNDS type="Window" left="10620" top="1215" width="12990" height="10890">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="4860" top="2070" width="0" height="0">
@@ -639,9 +639,9 @@
    <LINK srcnodeid="156" srcpinname="Output Node" dstnodeid="157" dstpinname="Texture">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="188" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="2475" top="21105" width="0" height="0">
+   <BOUNDS type="Node" left="2085" top="21420" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="2475" top="21105" width="2160" height="240">
+   <BOUNDS type="Box" left="2085" top="21420" width="2160" height="240">
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Constant Layer|">
    </PIN>
@@ -1188,7 +1188,141 @@
    <PIN pinname="Mesh" visible="1">
    </PIN>
    </NODE>
-   <NODE systemname="Field (ParticlesGPU Filter 3d)" filename="C:\Users\hameleon-ed HomePC\Documents\GitHub\ParticlesGPU-Modular\Field (ParticlesGPU Filter 3d).v4p" nodename="Field (ParticlesGPU Filter 3d)" componentmode="Hidden" id="0">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="269" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="11160" top="14715" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11160" top="14715" width="795" height="960">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="4" values="0.01,0.05,0.01,0.01">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="270" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="12075" top="15180" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12075" top="15180" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="271" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="6330" top="18075" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6330" top="18075" width="615" height="495">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="272" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="5715" top="18045" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5715" top="18045" width="540" height="510">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="274">
+   <BOUNDS type="Node" left="10575" top="17550" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="273">
+   <BOUNDS type="Node" left="10545" top="16680" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10545" top="16680" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="273" srcpinname="Y Output Value" dstnodeid="274" dstpinname="Switch">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="275" systemname="IOBox (Node)">
+   <BOUNDS type="Node" left="10845" top="14190" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10845" top="14190" width="1320" height="240">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="SizeXYZ(texture)">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="275" srcpinname="Output Node" dstnodeid="274" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="281" systemname="IOBox (Node)">
+   <BOUNDS type="Node" left="18600" top="16320" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="18600" top="16320" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Vector visible Layer|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="96" srcpinname="Layer" dstnodeid="281" dstpinname="Input Node">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="283" systemname="IOBox (Node)">
+   <BOUNDS type="Node" left="15720" top="16110" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="15720" top="16110" width="1455" height="255">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Field visible Layer|">
+   </PIN>
+   <PIN pinname="Input Node" visible="1">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="157" srcpinname="Layer" dstnodeid="283" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="Field (ParticlesGPU Filter 3d)" filename="..\..\ParticlesGPU-Modular\Field (ParticlesGPU Filter 3d).v4p" nodename="Field (ParticlesGPU Filter 3d)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="6435" top="11160" width="5130" height="270">
    </BOUNDS>
    <PIN pinname="Input (XYZW)" visible="1">
@@ -1226,7 +1360,7 @@
    </LINK>
    <LINK srcnodeid="261" srcpinname="Bang" dstnodeid="0" dstpinname="FieldEnabled">
    </LINK>
-   <NODE systemname="ToGPU (ParticlesGPU)" filename="C:\Users\hameleon-ed HomePC\Documents\GitHub\ParticlesGPU-Modular\ToGPU (ParticlesGPU).v4p" nodename="ToGPU (ParticlesGPU)" componentmode="Hidden" id="58">
+   <NODE systemname="ToGPU (ParticlesGPU)" filename="..\..\ParticlesGPU-Modular\ToGPU (ParticlesGPU).v4p" nodename="ToGPU (ParticlesGPU)" componentmode="Hidden" id="58">
    <BOUNDS type="Node" left="13620" top="9840" width="2370" height="270">
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
@@ -1246,7 +1380,7 @@
    </LINK>
    <LINK srcnodeid="58" srcpinname="Texture Out" dstnodeid="0" dstpinname="Field (XYZ)">
    </LINK>
-   <NODE systemname="Damper (ParticlesGPU Filter)" filename="C:\Users\hameleon-ed HomePC\Documents\GitHub\ParticlesGPU-Modular\Damper (ParticlesGPU Filter).v4p" nodename="Damper (ParticlesGPU Filter)" componentmode="Hidden" id="221">
+   <NODE systemname="Damper (ParticlesGPU Filter)" filename="..\..\ParticlesGPU-Modular\Damper (ParticlesGPU Filter).v4p" nodename="Damper (ParticlesGPU Filter)" componentmode="Hidden" id="221">
    <BOUNDS type="Node" left="7860" top="13560" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Target Value (XYZW)" visible="1">
@@ -1274,7 +1408,7 @@
    </LINK>
    <LINK srcnodeid="0" srcpinname="SizeXY" dstnodeid="221" dstpinname="SizeXY">
    </LINK>
-   <NODE systemname="Constant (ParticlesGPU)" filename="C:\Users\hameleon-ed HomePC\Documents\GitHub\ParticlesGPU-Modular\Constant (ParticlesGPU).v4p" nodename="Constant (ParticlesGPU)" componentmode="Hidden" id="10">
+   <NODE systemname="Constant (ParticlesGPU)" filename="..\..\ParticlesGPU-Modular\Constant (ParticlesGPU).v4p" nodename="Constant (ParticlesGPU)" componentmode="Hidden" id="10">
    <BOUNDS type="Node" left="2070" top="19050" width="10710" height="270">
    </BOUNDS>
    <PIN pinname="TranslateXYZ (XYZ), UniformScale (W)" visible="1">
@@ -1289,9 +1423,9 @@
    </PIN>
    <PIN pinname="Texture" visible="1" slicecount="1" values="||">
    </PIN>
-   <PIN pinname="Render State" visible="1" slicecount="1" values="||">
+   <PIN pinname="Render State" visible="1">
    </PIN>
-   <PIN pinname="Color" visible="1" slicecount="1" values="|0.84987,0.97752,1.00000,0.49958|">
+   <PIN pinname="Color" visible="1">
    </PIN>
    <PIN pinname="Transform" visible="1" slicecount="1" values="||">
    </PIN>
@@ -1299,7 +1433,7 @@
    </PIN>
    <PIN pinname="TranslateXYZ (XYZ), Tile Index (W)" visible="1">
    </PIN>
-   <PIN pinname="ScaleXYZ (XYZ)" visible="1" slicecount="1" values="||">
+   <PIN pinname="ScaleXYZ (XYZ)" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="17" srcpinname="Bang" dstnodeid="10" dstpinname="Apply" hiddenwhenlocked="1" linkstyle="Bezier">
@@ -1310,163 +1444,9 @@
    </LINK>
    <LINK srcnodeid="263" srcpinname="Mesh" dstnodeid="10" dstpinname="Mesh Input">
    </LINK>
-   <LINK srcnodeid="0" srcpinname="SizeXY" dstnodeid="10" dstpinname="SizeXY">
-   </LINK>
-   <NODE systemname="ToGPU (ParticlesGPU)" filename="C:\Users\hameleon-ed HomePC\Documents\GitHub\ParticlesGPU-Modular\ToGPU (ParticlesGPU).v4p" nodename="ToGPU (ParticlesGPU)" componentmode="Hidden" id="264">
-   <BOUNDS type="Node" left="11145" top="16140" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Texture Out" visible="1">
-   </PIN>
-   <PIN pinname="XYZW" slicecount="4" values="0.01,0.01,0.01,0.01">
-   </PIN>
-   <PIN pinname="Apply" visible="1">
-   </PIN>
-   <PIN pinname="SizeXY" slicecount="2" values="1,1">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="269" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="11160" top="14715" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="11160" top="14715" width="795" height="960">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="4" values="0.01,0.05,0.01,0.01">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Vector Size" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="269" srcpinname="Y Output Value" dstnodeid="264" dstpinname="XYZW">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="270" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="12075" top="15180" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="12075" top="15180" width="480" height="480">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Bang">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="270" srcpinname="Y Output Value" dstnodeid="264" dstpinname="Apply">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="271" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="6330" top="18075" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="6330" top="18075" width="615" height="495">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Integer">
-   </PIN>
-   <PIN pinname="Size" slicecount="1" values="15">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="271" srcpinname="Y Output Value" dstnodeid="10" dstpinname="TileSize">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="272" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="5715" top="18045" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="5715" top="18045" width="540" height="510">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="272" srcpinname="Y Output Value" dstnodeid="10" dstpinname="EnableTile">
-   </LINK>
-   <NODE systemname="Switch (Node Input)" nodename="Switch (Node Input)" componentmode="Hidden" id="274">
-   <BOUNDS type="Node" left="10575" top="17550" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 2" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Input 1" visible="1" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Switch" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="273">
-   <BOUNDS type="Node" left="10545" top="16680" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="10545" top="16680" width="480" height="480">
-   </BOUNDS>
-   <PIN pinname="Value Type" slicecount="1" values="Boolean">
-   </PIN>
-   <PIN pinname="Behavior" slicecount="1" values="Toggle">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="273" srcpinname="Y Output Value" dstnodeid="274" dstpinname="Switch">
-   </LINK>
-   <LINK srcnodeid="264" srcpinname="Texture Out" dstnodeid="274" dstpinname="Input 2">
-   </LINK>
-   <NODE nodename="IOBox (Node)" componentmode="InABox" id="275" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="10845" top="14190" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="10845" top="14190" width="1320" height="240">
-   </BOUNDS>
-   <PIN pinname="Input Node" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="SizeXYZ(texture)" encoded="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="275" srcpinname="Output Node" dstnodeid="274" dstpinname="Input 1">
-   </LINK>
-   <NODE nodename="IOBox (Node)" componentmode="InABox" id="281" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="18600" top="16320" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="18600" top="16320" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Vector visible Layer|" encoded="0">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="96" srcpinname="Layer" dstnodeid="281" dstpinname="Input Node">
-   </LINK>
-   <NODE nodename="IOBox (Node)" componentmode="InABox" id="283" systemname="IOBox (Node)">
-   <BOUNDS type="Node" left="15720" top="16110" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="15720" top="16110" width="1455" height="255">
-   </BOUNDS>
-   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Field visible Layer|">
-   </PIN>
-   <PIN pinname="Input Node" visible="1">
-   </PIN>
-   <PIN pinname="Output Node" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="157" srcpinname="Layer" dstnodeid="283" dstpinname="Input Node">
    </LINK>
    <LINK srcnodeid="10" srcpinname="Layer" dstnodeid="188" dstpinname="Input Node">
    </LINK>
@@ -1479,5 +1459,25 @@
    <LINK srcnodeid="262" srcpinname="Color Output" dstnodeid="10" dstpinname="Color">
    </LINK>
    <LINK srcnodeid="260" srcpinname="Output" dstnodeid="10" dstpinname="TranslateXYZ (XYZ), Tile Index (W)">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="SizeXY" dstnodeid="10" dstpinname="SizeXY">
+   </LINK>
+   <NODE systemname="ToGPU (ParticlesGPU)" filename="..\..\ParticlesGPU-Modular\ToGPU (ParticlesGPU).v4p" nodename="ToGPU (ParticlesGPU)" componentmode="Hidden" id="264">
+   <BOUNDS type="Node" left="11145" top="16140" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="XYZW">
+   </PIN>
+   <PIN pinname="Apply" visible="1">
+   </PIN>
+   <PIN pinname="SizeXY" slicecount="2" values="1,1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="269" srcpinname="Y Output Value" dstnodeid="264" dstpinname="XYZW">
+   </LINK>
+   <LINK srcnodeid="270" srcpinname="Y Output Value" dstnodeid="264" dstpinname="Apply">
+   </LINK>
+   <LINK srcnodeid="264" srcpinname="Texture Out" dstnodeid="274" dstpinname="Input 2">
    </LINK>
    </PATCH>
