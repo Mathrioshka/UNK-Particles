@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
-   <PATCH nodename="E:\Dropbox\Mathrioshka Project\UNKproject\Model\modules\Voronoi Points+Edgth.v4p" systemname="Voronoi Points+Edgth" filename="E:\Dropbox\Mathrioshka Project\UNKproject\Model\Modules\Voronoi Points+Edgth.v4p">
-   <BOUNDS type="Window" left="15435" top="7470" width="12810" height="9465">
+   <PATCH nodename="C:\Users\hameleon-ed HomePC\Documents\GitHub\UNK-Particles\modules\Voronoi Points+Edgth.v4p" systemname="Voronoi Points+Edgth" filename="E:\Dropbox\Mathrioshka Project\UNKproject\Model\Modules\Voronoi Points+Edgth.v4p">
+   <BOUNDS type="Window" left="4995" top="6915" width="12810" height="9465">
    </BOUNDS>
    <NODE systemname="Voronoi (2d)" filename="%VVVV%\addonpack\lib\nodes\plugins\Voronoi.dll" nodename="Voronoi (2d)" componentmode="Hidden" id="50">
    <BOUNDS type="Node" left="2610" top="2700" width="1230" height="270">
@@ -247,9 +247,9 @@
    </PIN>
    <PIN pinname="Antialias" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Width">
+   <PIN pinname="Width" visible="1" slicecount="1" values="3.35">
    </PIN>
-   <PIN pinname="Color">
+   <PIN pinname="Color" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,0.68000|">
    </PIN>
    <PIN pinname="Pattern" slicecount="1" visible="1" values="1">
    </PIN>
@@ -273,9 +273,9 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Line Width|">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="32" srcpinname="Y Output Value" dstnodeid="33" dstpinname="Width">
-   </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="30" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="3045" top="360" width="0" height="0">
    </BOUNDS>
@@ -383,9 +383,9 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Color Edges|">
    </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
    </NODE>
-   <LINK srcnodeid="24" srcpinname="Color Output" dstnodeid="33" dstpinname="Color">
-   </LINK>
    <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="51">
    <BOUNDS type="Node" left="960" top="1485" width="1770" height="270">
    </BOUNDS>
@@ -442,14 +442,6 @@
    </LINK>
    <LINK srcnodeid="51" srcpinname="Output" dstnodeid="54" dstpinname="Input 1">
    </LINK>
-   <NODE systemname="LFO (Animation)" nodename="LFO (Animation)" componentmode="Hidden" id="55">
-   <BOUNDS type="Node" left="4605" top="5700" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Period" slicecount="1" values="3">
-   </PIN>
-   </NODE>
    <NODE systemname="Resample (Spreads)" nodename="Resample (Spreads)" componentmode="Hidden" id="56">
    <BOUNDS type="Node" left="3090" top="7710" width="100" height="100">
    </BOUNDS>
@@ -461,7 +453,7 @@
    </PIN>
    </NODE>
    <NODE systemname="Count (Value)" nodename="Count (Value)" componentmode="Hidden" id="57">
-   <BOUNDS type="Node" left="3900" top="5715" width="100" height="100">
+   <BOUNDS type="Node" left="4335" top="6105" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -471,7 +463,7 @@
    <LINK srcnodeid="34" srcpinname="XYZ" dstnodeid="57" dstpinname="Input">
    </LINK>
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="58">
-   <BOUNDS type="Node" left="3930" top="7155" width="795" height="270">
+   <BOUNDS type="Node" left="4230" top="7155" width="795" height="270">
    </BOUNDS>
    <PIN pinname="Input 1" visible="1">
    </PIN>
@@ -488,18 +480,6 @@
    </LINK>
    <LINK srcnodeid="34" srcpinname="XYZ" dstnodeid="56" dstpinname="Input">
    </LINK>
-   <NODE systemname="WaveShaper (Value)" nodename="WaveShaper (Value)" componentmode="Hidden" id="65">
-   <BOUNDS type="Node" left="4605" top="6105" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Shape" slicecount="1" values="Rectangle">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="55" srcpinname="Output" dstnodeid="65" dstpinname="Input">
-   </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="66" systemname="IOBox (Node)">
    <BOUNDS type="Node" left="2280" top="7110" width="0" height="0">
    </BOUNDS>
@@ -512,50 +492,24 @@
    </NODE>
    <LINK srcnodeid="66" srcpinname="Output Node" dstnodeid="44" dstpinname="Texture">
    </LINK>
-   <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="67">
-   <BOUNDS type="Node" left="4635" top="6555" width="100" height="100">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="70" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="5175" top="6555" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Go To Position" visible="1">
-   </PIN>
-   <PIN pinname="FilterTime" slicecount="1" values="200" visible="1">
-   </PIN>
-   <PIN pinname="Position Out" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="65" srcpinname="Output" dstnodeid="67" dstpinname="Go To Position">
-   </LINK>
-   <LINK srcnodeid="67" srcpinname="Position Out" dstnodeid="58" dstpinname="Input 2">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="68" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="8265" top="4455" width="0" height="0">
+   <BOUNDS type="Box" left="5175" top="6555" width="795" height="240">
    </BOUNDS>
-   <BOUNDS type="Box" left="8265" top="4455" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="200">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.671745430866896">
    </PIN>
-   <PIN pinname="Units" slicecount="1" values="s" encoded="0">
+   <PIN pinname="Units" slicecount="1" values="||" encoded="0">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="Period" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Count Line|" encoded="0">
    </PIN>
    </NODE>
-   <LINK srcnodeid="68" srcpinname="Y Output Value" dstnodeid="55" dstpinname="Period">
+   <LINK srcnodeid="70" srcpinname="Y Output Value" dstnodeid="58" dstpinname="Input 2">
    </LINK>
-   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="69">
-   <BOUNDS type="Node" left="8295" top="5040" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Input 2" visible="1" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Input" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="68" srcpinname="Y Output Value" dstnodeid="69" dstpinname="Input">
+   <LINK srcnodeid="32" srcpinname="Y Output Value" dstnodeid="33" dstpinname="Width">
    </LINK>
-   <LINK srcnodeid="69" srcpinname="Output" dstnodeid="67" dstpinname="FilterTime">
+   <LINK srcnodeid="24" srcpinname="Color Output" dstnodeid="33" dstpinname="Color">
    </LINK>
    </PATCH>

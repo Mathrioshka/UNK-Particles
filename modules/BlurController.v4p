@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
-   <PATCH nodename="C:\Users\Vadim\Documents\GitRepos\UNK-Particles\modules\BlurController.v4p" systemname="BlurController" filename="C:\Users\Vadim\Documents\GitRepos\UNK-Particles\modules\BlurController.v4p">
-   <BOUNDS type="Window" left="7155" top="3450" width="9000" height="10665">
+   <PATCH nodename="C:\Users\hameleon-ed HomePC\Documents\GitHub\UNK-Particles\modules\BlurController.v4p" systemname="BlurController" filename="C:\Users\Vadim\Documents\GitRepos\UNK-Particles\modules\BlurController.v4p">
+   <BOUNDS type="Window" left="11685" top="5790" width="9000" height="10665">
    </BOUNDS>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="0">
    <BOUNDS type="Node" left="1080" top="8340" width="100" height="100">
@@ -102,7 +102,7 @@
    </LINK>
    <LINK srcnodeid="24" srcpinname="Texture Out" dstnodeid="22" dstpinname="Input">
    </LINK>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="25">
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="25">
    <BOUNDS type="Node" left="3225" top="11550" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="3225" top="11550" width="2400" height="1800">
@@ -113,6 +113,10 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Debug Blur Texture|">
    </PIN>
+   <PIN pinname="Clear" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="0">
+   </PIN>
    </NODE>
    <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="26">
    <BOUNDS type="Node" left="3225" top="10740" width="100" height="100">
@@ -122,6 +126,8 @@
    <PIN pinname="Transform" visible="1">
    </PIN>
    <PIN pinname="Texture" visible="1">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="26" srcpinname="Layer" dstnodeid="25" dstpinname="Layers">
@@ -276,16 +282,20 @@
    </NODE>
    <LINK srcnodeid="22" srcpinname="Output" dstnodeid="39" dstpinname="Input Node">
    </LINK>
-   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="42">
+   <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="42">
    <BOUNDS type="Node" left="5775" top="11550" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="5775" top="11550" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="18390" top="7950" width="6240" height="5085">
+   <BOUNDS type="Window" left="20505" top="8910" width="6240" height="5085">
    </BOUNDS>
    <PIN pinname="Layers" visible="1">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Debug Usage Test|">
+   </PIN>
+   <PIN pinname="Clear" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="41">
@@ -296,6 +306,8 @@
    <PIN pinname="Transform" visible="1">
    </PIN>
    <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Enabled" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="41" srcpinname="Layer" dstnodeid="42" dstpinname="Layers">
@@ -329,7 +341,7 @@
    </BOUNDS>
    <PIN pinname="Texture Out" visible="1">
    </PIN>
-   <PIN pinname="Filename" slicecount="1" values="..\textures\fine-grid1024.jpg" encoded="0">
+   <PIN pinname="Filename" slicecount="1" encoded="0" values="..\textures\fine-grid1024.jpg">
    </PIN>
    </NODE>
    <LINK srcnodeid="44" srcpinname="Texture Out" dstnodeid="43" dstpinname="Input">
@@ -343,7 +355,7 @@
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0.55">
    </PIN>
-   <PIN pinname="Units" slicecount="1" values="||" encoded="0">
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
