@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
-   <PATCH nodename="C:\Users\Vadim\Documents\GitRepos\UNK-Particles\modules\BlurController.v4p" systemname="BlurController" filename="C:\Users\Vadim\Documents\GitRepos\UNK-Particles\modules\BlurController.v4p">
+   <PATCH nodename="E:\SmartGit 3\bin\UNK-Particles\modules\BlurController.v4p" systemname="BlurController" filename="C:\Users\Vadim\Documents\GitRepos\UNK-Particles\modules\BlurController.v4p">
    <BOUNDS type="Window" left="11685" top="5790" width="9000" height="10665">
    </BOUNDS>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="Hidden" id="0">
@@ -116,6 +116,8 @@
    <PIN pinname="Clear" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Enabled" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Backbuffer Width" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="26">
