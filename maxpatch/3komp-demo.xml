@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<pattrstorage name = "3komp-demo">
+	<slot number = "1">
+		<patcher name = "3komp">
+			<pattr name = "xoverFrequencyHi" value = "15000" />
+			<pattr name = "xoverFrequencyLo" value = "80" />
+			<pattr name = "3komp" value = "-1" />
+			<patcher name = "lo">
+				<pattr name = "attack" value = "10." />
+				<pattr name = "bypass" value = "0" />
+				<pattr name = "key" value = "0" />
+				<pattr name = "lookahead" value = "0" />
+				<pattr name = "makeup" value = "12." />
+				<pattr name = "ratio" value = "12." />
+				<pattr name = "release" value = "0." />
+				<pattr name = "thresh" value = "0." />
+				<pattr name = "kompattr" value = "-1" />
+			</patcher>
+			<patcher name = "mid">
+				<pattr name = "attack" value = "10." />
+				<pattr name = "bypass" value = "0" />
+				<pattr name = "key" value = "0" />
+				<pattr name = "lookahead" value = "0" />
+				<pattr name = "makeup" value = "-24." />
+				<pattr name = "ratio" value = "12." />
+				<pattr name = "release" value = "100." />
+				<pattr name = "thresh" value = "0." />
+				<pattr name = "kompattr" value = "-1" />
+			</patcher>
+			<patcher name = "hi">
+				<pattr name = "attack" value = "0." />
+				<pattr name = "bypass" value = "0" />
+				<pattr name = "key" value = "0" />
+				<pattr name = "lookahead" value = "0" />
+				<pattr name = "makeup" value = "24." />
+				<pattr name = "ratio" value = "4." />
+				<pattr name = "release" value = "100." />
+				<pattr name = "thresh" value = "-6." />
+				<pattr name = "kompattr" value = "-1" />
+			</patcher>
+		</patcher>
+	</slot>
+	<slot number = "2">
+		<patcher name = "3komp">
+			<pattr name = "xoverFrequencyHi" value = "1500" />
+			<pattr name = "xoverFrequencyLo" value = "80" />
+			<pattr name = "3komp" value = "-1" />
+			<patcher name = "lo">
+				<pattr name = "attack" value = "0." />
+				<pattr name = "bypass" value = "0" />
+				<pattr name = "key" value = "0" />
+				<pattr name = "lookahead" value = "0" />
+				<pattr name = "makeup" value = "12." />
+				<pattr name = "ratio" value = "12." />
+				<pattr name = "release" value = "0." />
+				<pattr name = "thresh" value = "0." />
+				<pattr name = "kompattr" value = "-1" />
+			</patcher>
+			<patcher name = "mid">
+				<pattr name = "attack" value = "10." />
+				<pattr name = "bypass" value = "0" />
+				<pattr name = "key" value = "0" />
+				<pattr name = "lookahead" value = "0" />
+				<pattr name = "makeup" value = "-24." />
+				<pattr name = "ratio" value = "12." />
+				<pattr name = "release" value = "100." />
+				<pattr name = "thresh" value = "0." />
+				<pattr name = "kompattr" value = "-1" />
+			</patcher>
+			<patcher name = "hi">
+				<pattr name = "attack" value = "0." />
+				<pattr name = "bypass" value = "0" />
+				<pattr name = "key" value = "0" />
+				<pattr name = "lookahead" value = "100" />
+				<pattr name = "makeup" value = "9." />
+				<pattr name = "ratio" value = "32." />
+				<pattr name = "release" value = "100." />
+				<pattr name = "thresh" value = "-24." />
+				<pattr name = "kompattr" value = "-1" />
+			</patcher>
+		</patcher>
+	</slot>
+	<slot number = "3">
+		<patcher name = "3komp">
+			<pattr name = "xoverFrequencyHi" value = "2000" />
+			<pattr name = "xoverFrequencyLo" value = "100" />
+			<pattr name = "3komp" value = "-1" />
+			<patcher name = "lo">
+				<pattr name = "attack" value = "10." />
+				<pattr name = "bypass" value = "0" />
+				<pattr name = "key" value = "0" />
+				<pattr name = "lookahead" value = "44" />
+				<pattr name = "makeup" value = "12." />
+				<pattr name = "ratio" value = "12." />
+				<pattr name = "release" value = "100." />
+				<pattr name = "thresh" value = "0." />
+				<pattr name = "kompattr" value = "-1" />
+			</patcher>
+			<patcher name = "mid">
+				<pattr name = "attack" value = "10." />
+				<pattr name = "bypass" value = "0" />
+				<pattr name = "key" value = "0" />
+				<pattr name = "lookahead" value = "44" />
+				<pattr name = "makeup" value = "12." />
+				<pattr name = "ratio" value = "12." />
+				<pattr name = "release" value = "100." />
+				<pattr name = "thresh" value = "0." />
+				<pattr name = "kompattr" value = "-1" />
+			</patcher>
+			<patcher name = "hi">
+				<pattr name = "attack" value = "20." />
+				<pattr name = "bypass" value = "0" />
+				<pattr name = "key" value = "0" />
+				<pattr name = "lookahead" value = "88" />
+				<pattr name = "makeup" value = "-5." />
+				<pattr name = "ratio" value = "20." />
+				<pattr name = "release" value = "100." />
+				<pattr name = "thresh" value = "-21." />
+				<pattr name = "kompattr" value = "-1" />
+			</patcher>
+		</patcher>
+	</slot>
+	<slot number = "4">
+		<patcher name = "3komp">
+			<pattr name = "xoverFrequencyHi" value = "10000" />
+			<pattr name = "xoverFrequencyLo" value = "100" />
+			<pattr name = "3komp" value = "-1" />
+			<patcher name = "lo">
+				<pattr name = "attack" value = "40." />
+				<pattr name = "bypass" value = "0" />
+				<pattr name = "key" value = "0" />
+				<pattr name = "lookahead" value = "10" />
+				<pattr name = "makeup" value = "-6." />
+				<pattr name = "ratio" value = "-0.02" />
+				<pattr name = "release" value = "100." />
+				<pattr name = "thresh" value = "0." />
+				<pattr name = "kompattr" value = "-1" />
+			</patcher>
+			<patcher name = "mid">
+				<pattr name = "attack" value = "40." />
+				<pattr name = "bypass" value = "0" />
+				<pattr name = "key" value = "0" />
+				<pattr name = "lookahead" value = "10" />
+				<pattr name = "makeup" value = "-12." />
+				<pattr name = "ratio" value = "0.08" />
+				<pattr name = "release" value = "100." />
+				<pattr name = "thresh" value = "-97." />
+				<pattr name = "kompattr" value = "-1" />
+			</patcher>
+			<patcher name = "hi">
+				<pattr name = "attack" value = "40." />
+				<pattr name = "bypass" value = "0" />
+				<pattr name = "key" value = "0" />
+				<pattr name = "lookahead" value = "10" />
+				<pattr name = "makeup" value = "-9." />
+				<pattr name = "ratio" value = "0.08" />
+				<pattr name = "release" value = "100." />
+				<pattr name = "thresh" value = "-40." />
+				<pattr name = "kompattr" value = "-1" />
+			</patcher>
+		</patcher>
+	</slot>
+	<slot number = "5">
+		<patcher name = "3komp">
+			<pattr name = "xoverFrequencyHi" value = "10000" />
+			<pattr name = "xoverFrequencyLo" value = "100" />
+			<pattr name = "3komp" value = "-1" />
+			<patcher name = "lo">
+				<pattr name = "attack" value = "0." />
+				<pattr name = "bypass" value = "0" />
+				<pattr name = "key" value = "0" />
+				<pattr name = "lookahead" value = "0" />
+				<pattr name = "makeup" value = "6." />
+				<pattr name = "ratio" value = "12." />
+				<pattr name = "release" value = "100." />
+				<pattr name = "thresh" value = "-36." />
+				<pattr name = "kompattr" value = "-1" />
+			</patcher>
+			<patcher name = "mid">
+				<pattr name = "attack" value = "0." />
+				<pattr name = "bypass" value = "0" />
+				<pattr name = "key" value = "0" />
+				<pattr name = "lookahead" value = "0" />
+				<pattr name = "makeup" value = "6." />
+				<pattr name = "ratio" value = "12." />
+				<pattr name = "release" value = "100." />
+				<pattr name = "thresh" value = "-36." />
+				<pattr name = "kompattr" value = "-1" />
+			</patcher>
+			<patcher name = "hi">
+				<pattr name = "attack" value = "0." />
+				<pattr name = "bypass" value = "0" />
+				<pattr name = "key" value = "0" />
+				<pattr name = "lookahead" value = "0" />
+				<pattr name = "makeup" value = "6." />
+				<pattr name = "ratio" value = "12." />
+				<pattr name = "release" value = "100." />
+				<pattr name = "thresh" value = "-36." />
+				<pattr name = "kompattr" value = "-1" />
+			</patcher>
+		</patcher>
+	</slot>
+	<slot number = "6">
+		<patcher name = "3komp">
+			<pattr name = "xoverFrequencyHi" value = "3500" />
+			<pattr name = "xoverFrequencyLo" value = "3000" />
+			<pattr name = "3komp" value = "-1" />
+			<patcher name = "lo">
+				<pattr name = "attack" value = "200." />
+				<pattr name = "bypass" value = "0" />
+				<pattr name = "key" value = "0" />
+				<pattr name = "lookahead" value = "441" />
+				<pattr name = "makeup" value = "-99." />
+				<pattr name = "ratio" value = "12." />
+				<pattr name = "release" value = "200." />
+				<pattr name = "thresh" value = "-24." />
+				<pattr name = "kompattr" value = "-1" />
+			</patcher>
+			<patcher name = "mid">
+				<pattr name = "attack" value = "20." />
+				<pattr name = "bypass" value = "0" />
+				<pattr name = "key" value = "0" />
+				<pattr name = "lookahead" value = "88" />
+				<pattr name = "makeup" value = "18." />
+				<pattr name = "ratio" value = "24." />
+				<pattr name = "release" value = "20." />
+				<pattr name = "thresh" value = "-42." />
+				<pattr name = "kompattr" value = "-1" />
+			</patcher>
+			<patcher name = "hi">
+				<pattr name = "attack" value = "0." />
+				<pattr name = "bypass" value = "0" />
+				<pattr name = "key" value = "0" />
+				<pattr name = "lookahead" value = "0" />
+				<pattr name = "makeup" value = "-12." />
+				<pattr name = "ratio" value = "1." />
+				<pattr name = "release" value = "0." />
+				<pattr name = "thresh" value = "0." />
+				<pattr name = "kompattr" value = "-1" />
+			</patcher>
+		</patcher>
+	</slot>
+	<slot number = "7">
+		<patcher name = "3komp">
+			<pattr name = "xoverFrequencyHi" value = "15000" />
+			<pattr name = "xoverFrequencyLo" value = "40" />
+			<pattr name = "3komp" value = "-1" />
+			<patcher name = "lo">
+				<pattr name = "attack" value = "300." />
+				<pattr name = "bypass" value = "0" />
+				<pattr name = "key" value = "0" />
+				<pattr name = "lookahead" value = "441" />
+				<pattr name = "makeup" value = "24." />
+				<pattr name = "ratio" value = "22." />
+				<pattr name = "release" value = "100." />
+				<pattr name = "thresh" value = "-48." />
+				<pattr name = "kompattr" value = "-1" />
+			</patcher>
+			<patcher name = "mid">
+				<pattr name = "attack" value = "5." />
+				<pattr name = "bypass" value = "0" />
+				<pattr name = "key" value = "0" />
+				<pattr name = "lookahead" value = "4410" />
+				<pattr name = "makeup" value = "6." />
+				<pattr name = "ratio" value = "24." />
+				<pattr name = "release" value = "1100." />
+				<pattr name = "thresh" value = "-48." />
+				<pattr name = "kompattr" value = "-1" />
+			</patcher>
+			<patcher name = "hi">
+				<pattr name = "attack" value = "40." />
+				<pattr name = "bypass" value = "0" />
+				<pattr name = "key" value = "0" />
+				<pattr name = "lookahead" value = "441" />
+				<pattr name = "makeup" value = "16." />
+				<pattr name = "ratio" value = "1." />
+				<pattr name = "release" value = "100." />
+				<pattr name = "thresh" value = "-48." />
+				<pattr name = "kompattr" value = "-1" />
+			</patcher>
+		</patcher>
+	</slot>
+</pattrstorage>
+
