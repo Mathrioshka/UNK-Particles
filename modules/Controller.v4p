@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
    <PATCH nodename="E:\SmartGit 3\bin\UNK-Particles\modules\Controller.v4p" systemname="Controller" filename="C:\Users\Vadim\Documents\GitRepos\UNK-Particles\modules\Controller.v4p">
-   <BOUNDS type="Window" left="2160" top="6330" width="21210" height="11220">
+   <BOUNDS type="Window" left="0" top="5820" width="12540" height="11220">
    </BOUNDS>
    <NODE systemname="Count (Value)" nodename="Count (Value)" componentmode="Hidden" id="10">
    <BOUNDS type="Node" left="13110" top="6315" width="100" height="100">
@@ -175,9 +175,9 @@
    </PIN>
    </NODE>
    <NODE systemname="Cons (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (Spreads)" componentmode="Hidden" id="23">
-   <BOUNDS type="Node" left="3450" top="17115" width="32010" height="270">
+   <BOUNDS type="Node" left="3450" top="17115" width="34155" height="270">
    </BOUNDS>
-   <PIN pinname="Input Count" slicecount="1" values="17">
+   <PIN pinname="Input Count" slicecount="1" values="18">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -214,6 +214,8 @@
    <PIN pinname="Input 16" visible="1">
    </PIN>
    <PIN pinname="Input 17" visible="1">
+   </PIN>
+   <PIN pinname="Input 18" visible="1">
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="25" systemname="IOBox (Value Advanced)">
@@ -2429,7 +2431,7 @@
    <NODE nodename="IOBox (String)" componentmode="InABox" id="196" systemname="IOBox (String)">
    <BOUNDS type="Node" left="35895" top="15165" width="1575" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="35895" top="15165" width="2175" height="330">
+   <BOUNDS type="Box" left="35895" top="15165" width="4830" height="330">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" encoded="0" values="|09 - Field |">
    </PIN>
@@ -2903,7 +2905,7 @@
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="||" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="||">
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="239">
@@ -2915,7 +2917,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Auto / Hand Modes|" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Auto / Hand Modes|">
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
@@ -2933,7 +2935,7 @@
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0.09">
    </PIN>
-   <PIN pinname="Units" slicecount="1" values="||" encoded="0">
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
@@ -2941,7 +2943,7 @@
    </PIN>
    <PIN pinname="Maximum" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|01- Scale HAND|" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|01- Scale HAND|">
    </PIN>
    </NODE>
    <LINK srcnodeid="240" srcpinname="Y Output Value" dstnodeid="238" dstpinname="Input 2">
@@ -2977,7 +2979,7 @@
    </PIN>
    <PIN pinname="Maximum" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|02- Alpha HAND|" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|02- Alpha HAND|">
    </PIN>
    </NODE>
    <LINK srcnodeid="241" srcpinname="Y Output Value" dstnodeid="242" dstpinname="Input 2">
@@ -3029,7 +3031,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="13395" top="7155" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||" encoded="0">
+   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
@@ -3457,5 +3459,41 @@
    <LINK srcnodeid="273" srcpinname="Output" dstnodeid="135" dstpinname="Input Value">
    </LINK>
    <LINK srcnodeid="273" srcpinname="Output" dstnodeid="143" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="274" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="37680" top="16155" width="330" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="37680" top="16155" width="810" height="930">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" encoded="0" values="|x18, y19, &cr;&lf;x20, y21, &cr;&lf;x22, y23, &cr;&lf;x24, y25|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="7">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="275">
+   <BOUNDS type="Node" left="38565" top="16335" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" slicecount="1" values="|Field Attractors XY&apos;s|">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="276" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Node" left="38565" top="15915" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="38565" top="15915" width="1770" height="270">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="|Field Attractors XY&apos;s|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="276" srcpinname="Output Enum" dstnodeid="275" dstpinname="Receive String">
+   </LINK>
+   <LINK srcnodeid="275" srcpinname="Input Value" dstnodeid="23" dstpinname="Input 18">
    </LINK>
    </PATCH>

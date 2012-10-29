@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
-   <PATCH nodename="C:\Users\hameleon-ed HomePC\Documents\GitHub\UNK-Particles\modules\Field 2d Test.v4p" systemname="callmenames" filename="C:\Users\Vadim\Documents\GitRepos\ParticlesGPU-Modular\callmenames.v4p" locked="0">
+   <PATCH nodename="E:\SmartGit 3\bin\UNK-Particles\modules\Field 2d Test.v4p" systemname="callmenames" filename="C:\Users\Vadim\Documents\GitRepos\ParticlesGPU-Modular\callmenames.v4p" locked="0">
    <BOUNDS type="Window" left="1830" top="5445" width="12990" height="10890">
    </BOUNDS>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9" systemname="IOBox (Value Advanced)">
@@ -318,12 +318,12 @@
    </NODE>
    <LINK srcnodeid="122" srcpinname="Y Output Value" dstnodeid="96" dstpinname="Scale">
    </LINK>
-   <NODE systemname="AttractorField" filename="..\AttractorField.v4p" nodename="..\AttractorField.v4p" componentmode="Hidden" id="154">
+   <NODE systemname="AttractorField" filename="..\AttractorField.v4p" nodename="..\AttractorField.v4p" componentmode="InAWindow" id="154">
    <BOUNDS type="Node" left="13830" top="6765" width="7470" height="270">
    </BOUNDS>
    <PIN pinname="SizeXY" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="4530" top="8205" width="12945" height="9885">
+   <BOUNDS type="Window" left="645" top="6960" width="12945" height="9885">
    </BOUNDS>
    <PIN pinname="Vector X" visible="1">
    </PIN>
@@ -389,6 +389,8 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|X-direction X|">
    </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
    </NODE>
    <LINK srcnodeid="159" srcpinname="Y Output Value" dstnodeid="154" dstpinname="X-direction X">
    </LINK>
@@ -404,6 +406,8 @@
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|X-direction Y|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="160" srcpinname="Y Output Value" dstnodeid="154" dstpinname="X-direction Y">
@@ -436,6 +440,8 @@
    <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Y-direction Y|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="162" srcpinname="Y Output Value" dstnodeid="154" dstpinname="Y-direction Y">
@@ -867,7 +873,7 @@
    </PIN>
    <PIN pinname="Size" slicecount="1" values="15">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Field Enable|" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Field Enable|">
    </PIN>
    </NODE>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="235">
@@ -931,7 +937,7 @@
    </PIN>
    <PIN pinname="Y Output Value" visible="1">
    </PIN>
-   <PIN pinname="Units" slicecount="1" values="s" encoded="0">
+   <PIN pinname="Units" slicecount="1" encoded="0" values="s">
    </PIN>
    </NODE>
    <LINK srcnodeid="256" srcpinname="Y Output Value" dstnodeid="253" dstpinname="Period">

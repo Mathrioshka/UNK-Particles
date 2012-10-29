@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
    <PATCH nodename="E:\SmartGit 3\bin\UNK-Particles\gh2vvvv-2.v4p" systemname="gh2vvvv-2" filename="E:\Dropbox\Mathrioshka Project\UNKproject\Model\gh2vvvv-2.v4p">
-   <BOUNDS type="Window" left="4590" top="6360" width="20685" height="16200">
+   <BOUNDS type="Window" left="7170" top="5820" width="20685" height="10785">
    </BOUNDS>
    <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="5">
    <BOUNDS type="Node" left="7845" top="13080" width="735" height="270">
@@ -2440,7 +2440,7 @@
    </LINK>
    <LINK srcnodeid="136" srcpinname="Output" dstnodeid="15" dstpinname="Backbuffer Height">
    </LINK>
-   <NODE systemname="Field 2d Test" filename="modules\Field 2d Test.v4p" nodename="modules\Field 2d Test.v4p" componentmode="Hidden" id="798" stayontop="0">
+   <NODE systemname="Field 2d Test" filename="modules\Field 2d Test.v4p" nodename="modules\Field 2d Test.v4p" componentmode="InAWindow" id="798" stayontop="0">
    <BOUNDS type="Node" left="27960" top="23310" width="10545" height="270">
    </BOUNDS>
    <PIN pinname="Layer" visible="1">
@@ -3557,7 +3557,7 @@
    <NODE systemname="Controller" filename="modules\Controller.v4p" nodename="modules\Controller.v4p" componentmode="InAWindow" id="1020">
    <BOUNDS type="Node" left="19920" top="8520" width="6435" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="2160" top="6330" width="21210" height="11220">
+   <BOUNDS type="Window" left="0" top="5820" width="12540" height="11220">
    </BOUNDS>
    <PIN pinname="Polygon Line Slices" visible="1">
    </PIN>
