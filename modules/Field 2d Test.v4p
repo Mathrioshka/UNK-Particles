@@ -1308,8 +1308,6 @@
    </LINK>
    <LINK srcnodeid="262" srcpinname="Color Output" dstnodeid="10" dstpinname="Color">
    </LINK>
-   <LINK srcnodeid="260" srcpinname="Output" dstnodeid="10" dstpinname="TranslateXYZ (XYZ), Tile Index (W)">
-   </LINK>
    <LINK srcnodeid="0" srcpinname="SizeXY" dstnodeid="10" dstpinname="SizeXY">
    </LINK>
    <NODE systemname="ToGPU (ParticlesGPU)" filename="..\..\ParticlesGPU-Modular\ToGPU (ParticlesGPU).v4p" nodename="ToGPU (ParticlesGPU)" componentmode="Hidden" id="264">
@@ -1329,5 +1327,7 @@
    <LINK srcnodeid="270" srcpinname="Y Output Value" dstnodeid="264" dstpinname="Apply">
    </LINK>
    <LINK srcnodeid="264" srcpinname="Texture Out" dstnodeid="274" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="260" srcpinname="Output" dstnodeid="10" dstpinname="TranslateXYZ (XYZ), Tile Index (W)">
    </LINK>
    </PATCH>
