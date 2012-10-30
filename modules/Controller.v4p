@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
    <PATCH nodename="E:\SmartGit 3\bin\UNK-Particles\modules\Controller.v4p" systemname="Controller" filename="C:\Users\Vadim\Documents\GitRepos\UNK-Particles\modules\Controller.v4p">
-   <BOUNDS type="Window" left="0" top="5820" width="12540" height="11220">
+   <BOUNDS type="Window" left="930" top="5505" width="12540" height="11220">
    </BOUNDS>
    <NODE systemname="Count (Value)" nodename="Count (Value)" componentmode="Hidden" id="10">
    <BOUNDS type="Node" left="13110" top="6315" width="100" height="100">
@@ -3027,9 +3027,9 @@
    <LINK srcnodeid="239" srcpinname="Y Output Value" dstnodeid="244" dstpinname="Switch" hiddenwhenlocked="1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="246" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="13395" top="7155" width="0" height="0">
+   <BOUNDS type="Node" left="13560" top="7230" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="13395" top="7155" width="795" height="240">
+   <BOUNDS type="Box" left="13560" top="7230" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -3045,8 +3045,6 @@
    <LINK srcnodeid="8" srcpinname="Position Out" dstnodeid="244" dstpinname="Input 1">
    </LINK>
    <LINK srcnodeid="244" srcpinname="Output" dstnodeid="246" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="246" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Input 2">
    </LINK>
    <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="248">
    <BOUNDS type="Node" left="14625" top="9780" width="100" height="100">
@@ -3495,5 +3493,7 @@
    <LINK srcnodeid="276" srcpinname="Output Enum" dstnodeid="275" dstpinname="Receive String">
    </LINK>
    <LINK srcnodeid="275" srcpinname="Input Value" dstnodeid="23" dstpinname="Input 18">
+   </LINK>
+   <LINK srcnodeid="246" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Input 2">
    </LINK>
    </PATCH>
