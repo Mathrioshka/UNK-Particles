@@ -826,7 +826,7 @@
    </NODE>
    <LINK srcnodeid="54" srcpinname="Output" dstnodeid="67" dstpinname="Input">
    </LINK>
-   <NODE systemname="MonoHelp" filename="MonoHelp.v4p" nodename="MonoHelp.v4p" componentmode="InAWindow" id="89">
+   <NODE systemname="MonoHelp" filename="MonoHelp.v4p" nodename="MonoHelp.v4p" componentmode="Hidden" id="89">
    <BOUNDS type="Node" left="17880" top="5310" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Window" left="5595" top="7440" width="9000" height="6000">
