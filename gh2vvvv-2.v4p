@@ -2787,7 +2787,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="31965" top="8655" width="480" height="480">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="1" visible="1">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -5163,7 +5163,7 @@
    </PIN>
    <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Enable END.go2center|" encoded="0">
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="|Enable END.go2center|">
    </PIN>
    </NODE>
    <LINK srcnodeid="1229" srcpinname="Output" dstnodeid="335" dstpinname="Input">
