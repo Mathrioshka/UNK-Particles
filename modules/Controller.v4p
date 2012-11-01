@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
    <PATCH nodename="E:\SmartGit 3\bin\UNK-Particles\modules\Controller.v4p" systemname="Controller" filename="C:\Users\Vadim\Documents\GitRepos\UNK-Particles\modules\Controller.v4p">
-   <BOUNDS type="Window" left="0" top="5850" width="19725" height="11220">
+   <BOUNDS type="Window" left="6510" top="6585" width="19725" height="11220">
    </BOUNDS>
    <NODE systemname="Count (Value)" nodename="Count (Value)" componentmode="Hidden" id="10">
    <BOUNDS type="Node" left="13110" top="6315" width="100" height="100">
@@ -1643,9 +1643,9 @@
    <LINK srcnodeid="143" srcpinname="Output" dstnodeid="142" dstpinname="Go To Position">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="141" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="43335" top="7170" width="0" height="0">
+   <BOUNDS type="Node" left="43425" top="7140" width="0" height="0">
    </BOUNDS>
-   <BOUNDS type="Box" left="43335" top="7170" width="795" height="240">
+   <BOUNDS type="Box" left="43425" top="7140" width="795" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" values="0.01">
    </PIN>
@@ -1875,12 +1875,6 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="155" srcpinname="Output" dstnodeid="152" dstpinname="Go To Position">
-   </LINK>
-   <LINK srcnodeid="152" srcpinname="Position Out" dstnodeid="32" dstpinname="Y Input Value" linkstyle="Bezier">
-   <LINKPOINT x="30075" y="11693">
-   </LINKPOINT>
-   <LINKPOINT x="28650" y="11693">
-   </LINKPOINT>
    </LINK>
    <NODE systemname="Multiply (Value)" nodename="Multiply (Value)" componentmode="Hidden" id="157">
    <BOUNDS type="Node" left="29490" top="10380" width="100" height="100">
@@ -2971,7 +2965,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="7770" top="570" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.09">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -3007,7 +3001,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="12285" top="570" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.93">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -3051,7 +3045,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="14040" top="570" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -3109,7 +3103,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="15075" top="570" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.36">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.0001">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -3153,7 +3147,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="17385" top="570" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.13">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -3191,7 +3185,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="21375" top="570" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -3212,12 +3206,6 @@
    </LINK>
    <LINK srcnodeid="252" srcpinname="Output" dstnodeid="128" dstpinname="Y Input Value">
    </LINK>
-   <LINK srcnodeid="252" srcpinname="Output" dstnodeid="187" dstpinname="Y Input Value" linkstyle="Bezier">
-   <LINKPOINT x="20325" y="14138">
-   </LINKPOINT>
-   <LINKPOINT x="20295" y="14138">
-   </LINKPOINT>
-   </LINK>
    <NODE systemname="Switch (Value Input)" nodename="Switch (Value Input)" componentmode="Hidden" id="254">
    <BOUNDS type="Node" left="21585" top="9435" width="100" height="100">
    </BOUNDS>
@@ -3233,7 +3221,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="22830" top="570" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.23">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -3307,7 +3295,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="25275" top="645" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.89">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -3343,7 +3331,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="28215" top="645" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.11">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.39">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -3381,7 +3369,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="30690" top="630" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.76">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.42">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -3417,7 +3405,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="34575" top="660" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.01">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -3489,7 +3477,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="42750" top="795" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -3549,54 +3537,6 @@
    <LINK srcnodeid="275" srcpinname="Input Value" dstnodeid="23" dstpinname="Input 18">
    </LINK>
    <LINK srcnodeid="246" srcpinname="Y Output Value" dstnodeid="6" dstpinname="Input 2">
-   </LINK>
-   <NODE systemname="Timeliner (Animation)" filename="%VVVV%\lib\nodes\plugins\Timeliner.dll" nodename="Timeliner (Animation)" componentmode="InAWindow" id="277">
-   <BOUNDS type="Node" left="4980" top="6150" width="100" height="100">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4980" top="6150" width="6000" height="3000">
-   </BOUNDS>
-   <BOUNDS type="Window" left="1665" top="8085" width="25890" height="5010">
-   </BOUNDS>
-   <PIN pinname="Translate" slicecount="1" values="9.8992">
-   </PIN>
-   <PIN pinname="Scale" slicecount="1" values="22.6741">
-   </PIN>
-   <PIN pinname="Pin Settings" slicecount="2" encoded="0" values="|&lt;PIN Name=&quot;Ruler0&quot; Type=&quot;Ruler&quot; SliceCount=&quot;0&quot; Height=&quot;40&quot; Parent=&quot;0&quot; /&gt;|,|&lt;PIN Name=&quot;Value0&quot; Type=&quot;Value&quot; SliceCount=&quot;1&quot; Height=&quot;150&quot; Parent=&quot;1&quot; AllInOne=&quot;False&quot; Collapsed=&quot;False&quot; InterpolationIn=&quot;Linear&quot; Minimum=&quot;0.0000&quot; Maximum=&quot;1.0000&quot; /&gt;|">
-   </PIN>
-   <PIN pinname="Play" slicecount="1" values="0">
-   </PIN>
-   <PIN pinname="Value0-Time0" slicecount="4" values="-0.146167853366842,2.4367309788206,5.29174170433719,12.9100467321614">
-   </PIN>
-   <PIN pinname="Value0-Value0" slicecount="4" values="0,1,0.300000010331472,0.699999999205271">
-   </PIN>
-   <PIN pinname="Value0-InType0" slicecount="4" values="2,2,2,2">
-   </PIN>
-   <PIN pinname="Value0-OutType0" slicecount="4" values="2,2,2,2">
-   </PIN>
-   </NODE>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="278" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="5625" top="7290" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="5625" top="7290" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="277" srcpinname="Value0" dstnodeid="278" dstpinname="Y Input Value">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="279" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Node" left="4260" top="6990" width="0" height="0">
-   </BOUNDS>
-   <BOUNDS type="Box" left="4260" top="6990" width="795" height="240">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" encoded="0" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="277" srcpinname="Time" dstnodeid="279" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="280" systemname="IOBox (Value Advanced)">
    <BOUNDS type="Node" left="1920" top="14355" width="0" height="0">
@@ -3683,5 +3623,13 @@
    <LINK srcnodeid="281" srcpinname="Output" dstnodeid="285" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="285" srcpinname="Output" dstnodeid="282" dstpinname="Go To Position">
+   </LINK>
+   <LINK srcnodeid="263" srcpinname="Output" dstnodeid="32" dstpinname="Y Input Value" linkstyle="Bezier">
+   <LINKPOINT x="29760" y="12503">
+   </LINKPOINT>
+   <LINKPOINT x="28650" y="12503">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="252" srcpinname="Output" dstnodeid="187" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
