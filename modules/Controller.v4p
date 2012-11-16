@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta28.1.dtd" >
-   <PATCH nodename="C:\Users\Vadim\Desktop\UNK-Particles\modules\Controller.v4p" systemname="Controller" filename="C:\Users\Vadim\Documents\GitRepos\UNK-Particles\modules\Controller.v4p">
-   <BOUNDS type="Window" left="930" top="6465" width="19440" height="7035">
+   <PATCH nodename="E:\SmartGit 3\bin\UNK-Particles\modules\Controller.v4p" systemname="Controller" filename="C:\Users\Vadim\Documents\GitRepos\UNK-Particles\modules\Controller.v4p">
+   <BOUNDS type="Window" left="15795" top="6960" width="13005" height="10590">
    </BOUNDS>
    <NODE systemname="Count (Value)" nodename="Count (Value)" componentmode="Hidden" id="10">
    <BOUNDS type="Node" left="13110" top="6585" width="100" height="100">
@@ -1407,7 +1407,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="26700" top="6090" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="200">
+   <PIN pinname="Y Input Value" slicecount="1" values="125">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="s">
    </PIN>
@@ -1465,7 +1465,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="24885" top="4200" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="300">
+   <PIN pinname="Y Input Value" slicecount="1" values="100">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="s">
    </PIN>
@@ -2149,7 +2149,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="5295" top="16170" width="1545" height="390">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="0.5">
+   <PIN pinname="Y Input Value" slicecount="1" values="0.31" visible="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" encoded="0" values="||">
    </PIN>
@@ -2779,7 +2779,7 @@
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="223">
    <BOUNDS type="Node" left="24195" top="12345" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Box" left="24195" top="12345" width="345" height="240">
+   <BOUNDS type="Box" left="24195" top="12345" width="735" height="240">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
@@ -3726,8 +3726,6 @@
    </NODE>
    <LINK srcnodeid="317" srcpinname="Y Output Value" dstnodeid="316" dstpinname="END position">
    </LINK>
-   <LINK srcnodeid="316" srcpinname="Position Out" dstnodeid="223" dstpinname="Y Input Value">
-   </LINK>
    <NODE systemname="FromTo" filename="FromTo.v4p" nodename="FromTo.v4p" componentmode="Hidden" id="320">
    <BOUNDS type="Node" left="20325" top="11940" width="945" height="270">
    </BOUNDS>
@@ -4001,5 +3999,53 @@
    <LINK srcnodeid="308" srcpinname="Position Out" dstnodeid="335" dstpinname="Input">
    </LINK>
    <LINK srcnodeid="335" srcpinname="Output" dstnodeid="182" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="336">
+   <BOUNDS type="Node" left="5295" top="14070" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5295" top="14070" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="1" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||" encoded="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="286" srcpinname="Y Output Value" dstnodeid="336" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Damper (Animation)" nodename="Damper (Animation)" componentmode="Hidden" id="342">
+   <BOUNDS type="Node" left="5265" top="15000" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="FilterTime" visible="1" slicecount="1" values="20">
+   </PIN>
+   <PIN pinname="Go To Position" visible="1">
+   </PIN>
+   <PIN pinname="Position Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="336" srcpinname="Y Output Value" dstnodeid="342" dstpinname="Go To Position">
+   </LINK>
+   <LINK srcnodeid="342" srcpinname="Position Out" dstnodeid="176" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="343" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Node" left="26925" top="10500" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="26925" top="10500" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||" encoded="0">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="118" srcpinname="Position Out" dstnodeid="343" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="316" srcpinname="Position Out" dstnodeid="223" dstpinname="Y Input Value">
    </LINK>
    </PATCH>
